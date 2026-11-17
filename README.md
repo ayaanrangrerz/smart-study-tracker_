@@ -1,24 +1,21 @@
 # Smart Study Tracker
 
-A Python-based task management application designed for students to organize and manage study tasks efficiently.
+A small command-line study planner written in Python. Tasks are stored locally in a JSON file so they remain available between runs.
 
 ## Features
-- Add Tasks
-- View Tasks
-- Mark Tasks as Completed
-- Delete Tasks
-- JSON-based Permanent Storage
+- Add a task with a subject
+- View tasks and their pending/completed status
+- Mark a task complete or delete it
+- Save changes to `tasks.json`
 
-## Technologies Used
-- Python
-- JSON
-- File Handling
+## Run
+Requires Python 3.
 
-## Project Purpose
-This project was created to improve programming logic, file handling concepts, and practical Python development skills.
+```bash
+python smart_study_tracker.py
+```
 
-## Future Improvements
-- GUI Version
-- Deadline Reminders
-- Subject-wise Filtering
-- Progress Tracking
+The program creates `tasks.json` in the current working directory when it first saves tasks.
+
+## Notes
+This is a learning project and stores data in a local JSON file; it does not sync across devices.
